@@ -1,8 +1,7 @@
 # ballistics-solver
-A C# script I made used for calculating the vector a projectile should be launched at to reach a certain position, even with varied height
+A C# script I made used for calculating the vector a projectile should be launched at to reach a certain position, even with a varied height
 <img width="512" height="379" alt="image" src="https://github.com/user-attachments/assets/24e7e97a-5411-47cf-a469-9a22594185b9" />
-``` code
-//C#
+``` csharp
 public static Vector2 ProjectileShootVector(this Vector2 startPos,Vector2 endPos,float velocity,float gravity,float maxQ = 1,float minQ = -Mathf.Infinity,bool best = true){
      float rx = endPos.x - startPos.x;
 	 float x = Mathf.Abs(rx);
